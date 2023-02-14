@@ -1,12 +1,20 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
+    
     <router-view/>
+    <candyStore/>
   </div>
 </template>
+
+<script>
+import candyStore from "@/components/candyStore.vue";
+export default {
+  name: 'App',
+  components: {
+    candyStore
+  }
+}
+</script>
 
 <style>
 #app {
